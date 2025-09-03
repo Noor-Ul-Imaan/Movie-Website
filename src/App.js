@@ -4,7 +4,8 @@ import './App.css';
 import MovieCard from './MovieCard';
 import SearchIcon from './search.svg'; //searchIcon is my own variable i created here and would reference it later in an img tag
 
-const API_URL = 'http://www.omdbapi.com?apikey=6ad05337'
+const API_URL = `http://www.omdbapi.com?apikey=${process.env.REACT_APP_OMDB_API_KEY}`;
+
 
 
 
